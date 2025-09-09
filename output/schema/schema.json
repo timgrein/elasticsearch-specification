@@ -14,8 +14,8 @@
           "visibility": "private"
         }
       },
-      "description": "This API is a diagnostics API and the output should not be relied upon for building applications.",
-      "docUrl": "https://www.elastic.co/guide/en/elasticsearch/reference/current/delete-desired-balance.html",
+      "description": "This API is a diagnostics API and the output should not be relied upon for building applications",
+      "docUrl": null,
       "name": "_internal.delete_desired_balance",
       "request": null,
       "requestBodyRequired": false,
@@ -39,8 +39,8 @@
           "visibility": "private"
         }
       },
-      "description": "Deletes the desired nodes. Designed for indirect use by ECE/ESS and ECK. Direct use is not supported.",
-      "docUrl": "https://www.elastic.co/guide/en/elasticsearch/reference/current/delete-desired-nodes.html",
+      "description": "Designed for indirect use by ECE/ESS and ECK, direct use is not supported.",
+      "docUrl": null,
       "name": "_internal.delete_desired_nodes",
       "request": null,
       "requestBodyRequired": false,
@@ -64,8 +64,8 @@
           "visibility": "private"
         }
       },
-      "description": "This API is a diagnostics API and the output should not be relied upon for building applications.",
-      "docUrl": "https://www.elastic.co/guide/en/elasticsearch/reference/current/get-desired-balance.html",
+      "description": "This API is a diagnostics API and the output should not be relied upon for building applications",
+      "docUrl": null,
       "name": "_internal.get_desired_balance",
       "request": null,
       "requestBodyRequired": false,
@@ -89,8 +89,8 @@
           "visibility": "private"
         }
       },
-      "description": "Gets the latest desired nodes. Designed for indirect use by ECE/ESS and ECK. Direct use is not supported.",
-      "docUrl": "https://www.elastic.co/guide/en/elasticsearch/reference/current/get-desired-nodes.html",
+      "description": "Gets the latest desired nodes",
+      "docUrl": null,
       "name": "_internal.get_desired_nodes",
       "request": null,
       "requestBodyRequired": false,
@@ -110,12 +110,12 @@
     {
       "availability": {
         "stack": {
-          "stability": "stable",
+          "stability": "experimental",
           "visibility": "private"
         }
       },
       "description": "Prevalidates node removal from the cluster",
-      "docUrl": "https://www.elastic.co/guide/en/elasticsearch/reference/master/prevalidate-node-removal-api.html",
+      "docUrl": null,
       "name": "_internal.prevalidate_node_removal",
       "request": null,
       "requestBodyRequired": false,
@@ -139,8 +139,8 @@
           "visibility": "private"
         }
       },
-      "description": "Updates the desired nodes. Designed for indirect use by ECE/ESS and ECK. Direct use is not supported.",
-      "docUrl": "https://www.elastic.co/guide/en/elasticsearch/reference/current/update-desired-nodes.html",
+      "description": "Designed for indirect use by ECE/ESS and ECK, direct use is not supported.",
+      "docUrl": null,
       "name": "_internal.update_desired_nodes",
       "request": null,
       "requestBodyRequired": true,
@@ -3247,7 +3247,7 @@
           "visibility": "private"
         }
       },
-      "description": "Deletes a connector secret.",
+      "description": "Deletes a connector secret",
       "docUrl": null,
       "name": "connector.secret_delete",
       "request": null,
@@ -3272,7 +3272,7 @@
           "visibility": "private"
         }
       },
-      "description": "Retrieves a secret stored by Connectors.",
+      "description": "Retrieves a secret stored by Connectors",
       "docUrl": null,
       "name": "connector.secret_get",
       "request": null,
@@ -3297,7 +3297,7 @@
           "visibility": "private"
         }
       },
-      "description": "Creates a secret for a Connector.",
+      "description": "Creates a secret for a Connector",
       "docUrl": null,
       "name": "connector.secret_post",
       "request": null,
@@ -3322,7 +3322,7 @@
           "visibility": "private"
         }
       },
-      "description": "Creates or updates a secret for a Connector.",
+      "description": "Creates or updates a secret for a Connector",
       "docUrl": null,
       "name": "connector.secret_put",
       "request": null,
@@ -5100,7 +5100,9 @@
         "name": "Response",
         "namespace": "esql.get_query"
       },
-      "responseMediaType": [],
+      "responseMediaType": [
+        "application/json"
+      ],
       "urls": [
         {
           "methods": [
@@ -5142,7 +5144,9 @@
         "name": "Response",
         "namespace": "esql.list_queries"
       },
-      "responseMediaType": [],
+      "responseMediaType": [
+        "application/json"
+      ],
       "urls": [
         {
           "methods": [
@@ -5445,7 +5449,7 @@
           "visibility": "private"
         }
       },
-      "description": "Deletes a secret stored by Fleet.",
+      "description": "Deletes a secret stored by Fleet",
       "docUrl": null,
       "name": "fleet.delete_secret",
       "request": null,
@@ -5470,7 +5474,7 @@
           "visibility": "private"
         }
       },
-      "description": "Retrieves a secret stored by Fleet.",
+      "description": "Retrieves a secret stored by Fleet",
       "docUrl": null,
       "name": "fleet.get_secret",
       "request": null,
@@ -5586,7 +5590,7 @@
           "visibility": "private"
         }
       },
-      "description": "Creates a secret stored by Fleet.",
+      "description": "Creates a secret stored by Fleet",
       "docUrl": null,
       "name": "fleet.post_secret",
       "request": null,
@@ -7017,7 +7021,7 @@
         }
       },
       "description": "Delete data stream options.\nRemoves the data stream options from a data stream.",
-      "docUrl": "https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html",
+      "docUrl": "https://www.elastic.co/docs/api/doc/elasticsearch/operation/operation-indices-delete-data-stream-options",
       "name": "indices.delete_data_stream_options",
       "request": {
         "name": "Request",
@@ -7745,6 +7749,31 @@
     },
     {
       "availability": {
+        "stack": {
+          "stability": "stable",
+          "visibility": "public"
+        }
+      },
+      "description": "Get data stream mappings",
+      "docUrl": "https://www.elastic.co/docs/api/doc/elasticsearch/operation/operation-indices-get-data-stream-mappings",
+      "name": "indices.get_data_stream_mappings",
+      "request": null,
+      "requestBodyRequired": false,
+      "response": null,
+      "responseMediaType": [
+        "application/json"
+      ],
+      "urls": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "path": "/_data_stream/{name}/_mappings"
+        }
+      ]
+    },
+    {
+      "availability": {
         "serverless": {
           "stability": "stable",
           "visibility": "public"
@@ -7756,7 +7785,7 @@
       },
       "description": "Get data stream options.\n\nGet the data stream options configuration of one or more data streams.",
       "docTag": "data stream",
-      "docUrl": "https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html",
+      "docUrl": "https://www.elastic.co/docs/api/doc/elasticsearch/operation/operation-indices-get-data-stream-options",
       "name": "indices.get_data_stream_options",
       "request": {
         "name": "Request",
@@ -7782,13 +7811,12 @@
     {
       "availability": {
         "stack": {
-          "featureFlag": "logs_stream",
           "stability": "stable",
-          "visibility": "feature_flag"
+          "visibility": "public"
         }
       },
-      "description": "Gets a data stream's settings",
-      "docUrl": "https://www.elastic.co/guide/en/elasticsearch/reference/master/data-streams.html",
+      "description": "Get data stream settings",
+      "docUrl": "https://www.elastic.co/docs/api/doc/elasticsearch/operation/operation-indices-get-data-stream-settings",
       "name": "indices.get_data_stream_settings",
       "request": null,
       "requestBodyRequired": false,
@@ -8365,6 +8393,31 @@
     },
     {
       "availability": {
+        "stack": {
+          "stability": "stable",
+          "visibility": "public"
+        }
+      },
+      "description": "Update data stream mappings",
+      "docUrl": "https://www.elastic.co/docs/api/doc/elasticsearch/operation/operation-indices-put-data-stream-mappings",
+      "name": "indices.put_data_stream_mappings",
+      "request": null,
+      "requestBodyRequired": true,
+      "response": null,
+      "responseMediaType": [
+        "application/json"
+      ],
+      "urls": [
+        {
+          "methods": [
+            "PUT"
+          ],
+          "path": "/_data_stream/{name}/_mappings"
+        }
+      ]
+    },
+    {
+      "availability": {
         "serverless": {
           "stability": "stable",
           "visibility": "public"
@@ -8376,7 +8429,7 @@
       },
       "description": "Update data stream options.\nUpdate the data stream options of the specified data streams.",
       "docTag": "data stream",
-      "docUrl": "https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html",
+      "docUrl": "https://www.elastic.co/docs/api/doc/elasticsearch/operation/operation-indices-put-data-stream-options",
       "name": "indices.put_data_stream_options",
       "request": {
         "name": "Request",
@@ -8405,13 +8458,12 @@
     {
       "availability": {
         "stack": {
-          "featureFlag": "logs_stream",
           "stability": "stable",
-          "visibility": "feature_flag"
+          "visibility": "public"
         }
       },
-      "description": "Updates a data stream's settings",
-      "docUrl": "https://www.elastic.co/guide/en/elasticsearch/reference/master/data-streams.html",
+      "description": "Update data stream settings",
+      "docUrl": "https://www.elastic.co/docs/api/doc/elasticsearch/operation/operation-indices-put-data-stream-settings",
       "name": "indices.put_data_stream_settings",
       "request": null,
       "requestBodyRequired": true,
@@ -8748,6 +8800,31 @@
             "POST"
           ],
           "path": "/{index}/_reload_search_analyzers"
+        }
+      ]
+    },
+    {
+      "availability": {
+        "stack": {
+          "stability": "stable",
+          "visibility": "public"
+        }
+      },
+      "description": "Remove an index block",
+      "docUrl": "https://www.elastic.co/docs/api/doc/elasticsearch/operation/operation-indices-remove-block",
+      "name": "indices.remove_block",
+      "request": null,
+      "requestBodyRequired": false,
+      "response": null,
+      "responseMediaType": [
+        "application/json"
+      ],
+      "urls": [
+        {
+          "methods": [
+            "DELETE"
+          ],
+          "path": "/{index}/_block/{block}"
         }
       ]
     },
@@ -9569,6 +9646,34 @@
     },
     {
       "availability": {
+        "stack": {
+          "stability": "stable",
+          "visibility": "public"
+        }
+      },
+      "description": "Create a AI21 inference endpoint",
+      "docUrl": "https://www.elastic.co/docs/api/doc/elasticsearch/operation/operation-inference-put-ai21",
+      "name": "inference.put_ai21",
+      "request": null,
+      "requestBodyRequired": false,
+      "requestMediaType": [
+        "application/json"
+      ],
+      "response": null,
+      "responseMediaType": [
+        "application/json"
+      ],
+      "urls": [
+        {
+          "methods": [
+            "PUT"
+          ],
+          "path": "/_inference/{task_type}/{ai21_inference_id}"
+        }
+      ]
+    },
+    {
+      "availability": {
         "serverless": {
           "stability": "stable",
           "visibility": "public"
@@ -9654,6 +9759,34 @@
             "PUT"
           ],
           "path": "/_inference/{task_type}/{amazonbedrock_inference_id}"
+        }
+      ]
+    },
+    {
+      "availability": {
+        "stack": {
+          "stability": "stable",
+          "visibility": "public"
+        }
+      },
+      "description": "Create an Amazon SageMaker inference endpoint",
+      "docUrl": "https://www.elastic.co/docs/api/doc/elasticsearch/operation/operation-inference-put-amazonsagemaker",
+      "name": "inference.put_amazonsagemaker",
+      "request": null,
+      "requestBodyRequired": false,
+      "requestMediaType": [
+        "application/json"
+      ],
+      "response": null,
+      "responseMediaType": [
+        "application/json"
+      ],
+      "urls": [
+        {
+          "methods": [
+            "PUT"
+          ],
+          "path": "/_inference/{task_type}/{amazonsagemaker_inference_id}"
         }
       ]
     },
@@ -9834,6 +9967,62 @@
             "PUT"
           ],
           "path": "/_inference/{task_type}/{cohere_inference_id}"
+        }
+      ]
+    },
+    {
+      "availability": {
+        "stack": {
+          "stability": "stable",
+          "visibility": "public"
+        }
+      },
+      "description": "Create a custom inference endpoint",
+      "docUrl": "https://www.elastic.co/docs/api/doc/elasticsearch/operation/operation-inference-put-custom",
+      "name": "inference.put_custom",
+      "request": null,
+      "requestBodyRequired": false,
+      "requestMediaType": [
+        "application/json"
+      ],
+      "response": null,
+      "responseMediaType": [
+        "application/json"
+      ],
+      "urls": [
+        {
+          "methods": [
+            "PUT"
+          ],
+          "path": "/_inference/{task_type}/{custom_inference_id}"
+        }
+      ]
+    },
+    {
+      "availability": {
+        "stack": {
+          "stability": "stable",
+          "visibility": "public"
+        }
+      },
+      "description": "Create a DeepSeek inference endpoint",
+      "docUrl": "https://www.elastic.co/docs/api/doc/elasticsearch/operation/operation-inference-put-deepseek",
+      "name": "inference.put_deepseek",
+      "request": null,
+      "requestBodyRequired": false,
+      "requestMediaType": [
+        "application/json"
+      ],
+      "response": null,
+      "responseMediaType": [
+        "application/json"
+      ],
+      "urls": [
+        {
+          "methods": [
+            "PUT"
+          ],
+          "path": "/_inference/{task_type}/{deepseek_inference_id}"
         }
       ]
     },
@@ -10108,6 +10297,34 @@
             "PUT"
           ],
           "path": "/_inference/{task_type}/{jinaai_inference_id}"
+        }
+      ]
+    },
+    {
+      "availability": {
+        "stack": {
+          "stability": "stable",
+          "visibility": "public"
+        }
+      },
+      "description": "Create a Llama inference endpoint",
+      "docUrl": "https://www.elastic.co/docs/api/doc/elasticsearch/operation/operation-inference-put-llama",
+      "name": "inference.put_llama",
+      "request": null,
+      "requestBodyRequired": false,
+      "requestMediaType": [
+        "application/json"
+      ],
+      "response": null,
+      "responseMediaType": [
+        "application/json"
+      ],
+      "urls": [
+        {
+          "methods": [
+            "PUT"
+          ],
+          "path": "/_inference/{task_type}/{llama_inference_id}"
         }
       ]
     },
@@ -11046,8 +11263,8 @@
           "visibility": "public"
         }
       },
-      "description": "Performs a kNN search.",
-      "docUrl": "https://www.elastic.co/guide/en/elasticsearch/reference/master/search-search.html",
+      "description": "Performs a kNN search",
+      "docUrl": null,
       "name": "knn_search",
       "request": null,
       "requestBodyRequired": false,
@@ -15651,7 +15868,7 @@
           "visibility": "private"
         }
       },
-      "description": "Extracts a UI-optimized structure to render flamegraphs from Universal Profiling.",
+      "description": "Extracts a UI-optimized structure to render flamegraphs from Universal Profiling",
       "docUrl": "https://www.elastic.co/guide/en/observability/current/universal-profiling.html",
       "name": "profiling.flamegraph",
       "request": null,
@@ -15679,7 +15896,7 @@
           "visibility": "private"
         }
       },
-      "description": "Extracts raw stacktrace information from Universal Profiling.",
+      "description": "Extracts raw stacktrace information from Universal Profiling",
       "docUrl": "https://www.elastic.co/guide/en/observability/current/universal-profiling.html",
       "name": "profiling.stacktraces",
       "request": null,
@@ -15707,7 +15924,7 @@
           "visibility": "private"
         }
       },
-      "description": "Returns basic information about the status of Universal Profiling.",
+      "description": "Returns basic information about the status of Universal Profiling",
       "docUrl": "https://www.elastic.co/guide/en/observability/current/universal-profiling.html",
       "name": "profiling.status",
       "request": null,
@@ -15732,7 +15949,7 @@
           "visibility": "private"
         }
       },
-      "description": "Extracts a list of topN functions from Universal Profiling.",
+      "description": "Extracts a list of topN functions from Universal Profiling",
       "docUrl": "https://www.elastic.co/guide/en/observability/current/universal-profiling.html",
       "name": "profiling.topn_functions",
       "request": null,
@@ -21697,6 +21914,86 @@
     },
     {
       "availability": {
+        "stack": {
+          "featureFlag": "logs_stream",
+          "stability": "stable",
+          "visibility": "feature_flag"
+        }
+      },
+      "description": "Disable the Logs Streams feature for this cluster",
+      "docUrl": "https://www.elastic.co/guide/en/elasticsearch/reference/master/streams-logs-disable.html",
+      "name": "streams.logs_disable",
+      "request": null,
+      "requestBodyRequired": false,
+      "response": null,
+      "responseMediaType": [
+        "application/json",
+        "text/plain"
+      ],
+      "urls": [
+        {
+          "methods": [
+            "POST"
+          ],
+          "path": "/_streams/logs/_disable"
+        }
+      ]
+    },
+    {
+      "availability": {
+        "stack": {
+          "featureFlag": "logs_stream",
+          "stability": "stable",
+          "visibility": "feature_flag"
+        }
+      },
+      "description": "Enable the Logs Streams feature for this cluster",
+      "docUrl": "https://www.elastic.co/guide/en/elasticsearch/reference/master/streams-logs-enable.html",
+      "name": "streams.logs_enable",
+      "request": null,
+      "requestBodyRequired": false,
+      "response": null,
+      "responseMediaType": [
+        "application/json",
+        "text/plain"
+      ],
+      "urls": [
+        {
+          "methods": [
+            "POST"
+          ],
+          "path": "/_streams/logs/_enable"
+        }
+      ]
+    },
+    {
+      "availability": {
+        "stack": {
+          "featureFlag": "logs_stream",
+          "stability": "stable",
+          "visibility": "feature_flag"
+        }
+      },
+      "description": "Return the current status of the streams feature for each streams type",
+      "docUrl": "https://www.elastic.co/guide/en/elasticsearch/reference/master/streams-status.html",
+      "name": "streams.status",
+      "request": null,
+      "requestBodyRequired": false,
+      "response": null,
+      "responseMediaType": [
+        "application/json"
+      ],
+      "urls": [
+        {
+          "methods": [
+            "GET"
+          ],
+          "path": "/_streams/status"
+        }
+      ]
+    },
+    {
+      "availability": {
         "serverless": {
           "stability": "stable",
           "visibility": "public"
@@ -22428,7 +22725,7 @@
           "visibility": "public"
         }
       },
-      "description": "Retrieves transform usage information for transform nodes.",
+      "description": "Retrieves transform usage information for transform nodes",
       "docUrl": "https://www.elastic.co/guide/en/elasticsearch/reference/current/get-transform-node-stats.html",
       "name": "transform.get_node_stats",
       "request": null,
@@ -22726,6 +23023,31 @@
             "POST"
           ],
           "path": "/_transform/{transform_id}/_schedule_now"
+        }
+      ]
+    },
+    {
+      "availability": {
+        "stack": {
+          "stability": "stable",
+          "visibility": "public"
+        }
+      },
+      "description": "Set upgrade_mode for transform indices",
+      "docUrl": "https://www.elastic.co/docs/api/doc/elasticsearch/operation/operation-transform-set-upgrade-mode",
+      "name": "transform.set_upgrade_mode",
+      "request": null,
+      "requestBodyRequired": false,
+      "response": null,
+      "responseMediaType": [
+        "application/json"
+      ],
+      "urls": [
+        {
+          "methods": [
+            "POST"
+          ],
+          "path": "/_transform/set_upgrade_mode"
         }
       ]
     },
@@ -117761,7 +118083,7 @@
           }
         },
         {
-          "description": "Specify timeout for connection to master",
+          "description": "Timeout for waiting for new cluster state in case it is blocked",
           "name": "master_timeout",
           "required": false,
           "serverDefault": "30s",
@@ -127729,6 +128051,7 @@
       ],
       "query": [
         {
+          "description": "Whether to ignore if a wildcard indices expression resolves into no concrete indices. (This includes `_all` string or when no indices have been specified)",
           "name": "allow_no_indices",
           "required": false,
           "serverDefault": true,
@@ -127767,6 +128090,7 @@
           }
         },
         {
+          "description": "Whether to expand wildcard expression to concrete indices that are open, closed or both.",
           "name": "expand_wildcards",
           "required": false,
           "serverDefault": "open",
