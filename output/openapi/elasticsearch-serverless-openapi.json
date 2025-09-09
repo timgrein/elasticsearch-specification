@@ -67299,6 +67299,7 @@
       "eql.search-allow_no_indices": {
         "in": "query",
         "name": "allow_no_indices",
+        "description": "Whether to ignore if a wildcard indices expression resolves into no concrete indices. (This includes `_all` string or when no indices have been specified)",
         "deprecated": false,
         "schema": {
           "type": "boolean"
@@ -67328,7 +67329,7 @@
       "eql.search-expand_wildcards": {
         "in": "query",
         "name": "expand_wildcards",
-        "description": "\n\nSupported values include:\n  - `all`: Match any data stream or index, including hidden ones.\n  - `open`: Match open, non-hidden indices. Also matches any non-hidden data stream.\n  - `closed`: Match closed, non-hidden indices. Also matches any non-hidden data stream. Data streams cannot be closed.\n  - `hidden`: Match hidden data streams and hidden indices. Must be combined with `open`, `closed`, or `both`.\n  - `none`: Wildcard expressions are not accepted.\n\n",
+        "description": "Whether to expand wildcard expression to concrete indices that are open, closed or both.\n\nSupported values include:\n  - `all`: Match any data stream or index, including hidden ones.\n  - `open`: Match open, non-hidden indices. Also matches any non-hidden data stream.\n  - `closed`: Match closed, non-hidden indices. Also matches any non-hidden data stream. Data streams cannot be closed.\n  - `hidden`: Match hidden data streams and hidden indices. Must be combined with `open`, `closed`, or `both`.\n  - `none`: Wildcard expressions are not accepted.\n\n",
         "deprecated": false,
         "schema": {
           "$ref": "#/components/schemas/_types.ExpandWildcards"
